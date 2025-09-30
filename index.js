@@ -19,7 +19,7 @@ app.get("/getAll",(req,res)=>{
 app.post("/createBook",(req,res)=>{
     books.push(req.body);
     
-    return res.status(201).json(books);
+    return res.status(201).json(req.body);
 })
 
 app.put("/updateBook/:id",(req,res)=>{
